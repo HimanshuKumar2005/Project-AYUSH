@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - AYUSH Startup Registration Portal</title>
+    <title>AYUSH Yojna - Login & Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +20,41 @@
     </header>
 
     <main>
-        <section class="login-form">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="#">Register here</a></p>
-        </section>
+        <div class="form-container">
+            <div class="form-box">
+                <h1 id="title">Login</h1>
+
+                <!-- User and Admin Toggle -->
+                <div class="toggle-buttons">
+                    <button id="user-login-btn" onclick="showLoginForm()">User Login</button>
+                    <button id="admin-login-btn" onclick="showAdminLoginForm()">Admin Login</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="login-form" class="input-group">
+                    <input type="text" id="username" class="input-field" placeholder="Username" required>
+                    <input type="password" id="password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <p>Don't have an account? <a href="#" onclick="showRegistrationForm()">Register</a></p>
+                </form>
+
+                <!-- Admin Login Form -->
+                <form id="admin-login-form" class="input-group hidden">
+                    <input type="text" id="admin-username" class="input-field" placeholder="Username" required>
+                    <input type="password" id="admin-password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Admin Login</button>
+                </form>
+
+                <!-- Registration Form -->
+                <form id="register-form" class="input-group hidden">
+                    <input type="text" id="reg-username" class="input-field" placeholder="Username" required>
+                    <input type="email" id="reg-email" class="input-field" placeholder="Email" required>
+                    <input type="password" id="reg-password" class="input-field" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Register</button>
+                    <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
