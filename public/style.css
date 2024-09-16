@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: rgb(85, 126, 160);
+    opacity: 0.95;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+
+#logoImg{
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Sections */
+.image {
+   display: flex;
+   justify-content: space-between;
+    
+}
+.image img{
+    width: 500px;
+    
+}
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section#about, section#contact {
+    background-color: #fff;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    color: #555;
+}
+.about-box div{
+    width: 300px;
+    border: 2px solid #d5e1ed;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.about-box div img{
+    height: 70px;
+    width: 70px;
+    margin-top: 8px;
+}
+
+.about-box{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+#about {
+    text-align: center;
+    border: 2px solid #d5e1ed;
+    padding: 40px 20px;
+    transition: all ease-in-out 0.8s;
+    margin :0 20px;
+    border-radius: 5px;
+
+} 
+#about p{
+    font-size:larger;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #303234;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Login Form */
+.login-form {
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.login-form p {
+    margin-top: 20px;
+}
+
+/* Toggle Buttons for User/Admin Login */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #45a049;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.toggle-buttons button:hover {
+    background-color: #2980b9;
+}
+
+/* Hidden Class for Form Switching */
+.hidden {
+    display: none;
+}
+
+/* Additional Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .login-form {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
+
+/* Responsive Styles for Toggle Buttons */
+@media screen and (max-width: 768px) {
+    .toggle-buttons button {
+        margin: 5px;
+        padding: 8px;
+    }
+}
+
+/* Centering the form box */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* To adjust for header and footer */
+    background-color: #f4f4f4;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Ensuring the form width adapts for mobile devices */
+@media screen and (max-width: 768px) {
+    .form-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Toggle Buttons for User/Admin Login */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.toggle-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Hidden Class for Form Switching */
+.hidden {
+    display: none;
+}
+
+/* Additional Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .toggle-buttons button {
+        margin: 5px;
+        padding: 8px;
+    }
+}
+
+/* Style adjustments for the gender select dropdown */
+select.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Style adjustments for the date input */
+input[type="date"].input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
