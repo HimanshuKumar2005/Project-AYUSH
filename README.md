@@ -15,6 +15,7 @@
   8. Area wise distribution of startups based on the AYUSH
   9. Map view to understand quickly
   10. Link the database with Ministry Of Ayush
+
       and many uncountable features to provide the streamlined Registration process for users...
 
 
