@@ -17,13 +17,14 @@ body {
 }
 
 .vision-header {
-  background-color: #2f8f2f;
+  background-color: rgb(85, 126, 160);
   color: white;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-blend-mode: overlay;
+  border-radius: 5px;
 }
 
 .vision-header h1 {
@@ -35,7 +36,7 @@ body {
 .vision-header p {
   font-size: 1.4rem;
   margin-top: 10px;
-  color: #e0ffe0;
+  color: white;
 }
 
 .about-us {
@@ -43,7 +44,7 @@ body {
 }
 
 .about-us h2 {
-  color: #2f8f2f;
+  color:#303234;
   font-size: 2.5rem;
   margin-bottom: 25px;
   text-align: center;
@@ -54,7 +55,7 @@ body {
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
-  background-color: #e6ffe6;
+  background-color: rgb(208, 228, 244);
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,7 +66,7 @@ body {
 }
 
 .vision-content h2 {
-  color: #2f8f2f;
+  color: #303234;
   font-size: 2.8rem;
   margin-bottom: 20px;
   text-align: center;
@@ -83,7 +84,7 @@ body {
 }
 
 .vision-goals h2 {
-  color: #2f8f2f;
+  color: #303234;
   font-size: 2.5rem;
   margin-bottom: 25px;
   text-align: center;
@@ -95,11 +96,11 @@ body {
 }
 
 .vision-goals li {
-  background-color: #d9f7d9;
+  background-color: rgb(208, 228, 244);
   margin-bottom: 20px;
   padding: 20px;
   font-size: 1.2rem;
-  border-left: 7px solid #2f8f2f;
+  border-left: 7px solid rgb(85, 126, 160);
   line-height: 1.8;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -109,14 +110,14 @@ footer {
   text-align: center;
   margin-top: 50px;
   padding: 30px;
-  background-color: #2f8f2f;
+  background-color: #303234;
   color: white;
   font-size: 1.3rem;
 }
 
 footer p {
   margin: 0;
-  color: #e0ffe0;
+  color: white;
 }
 
 @media (max-width: 768px) {
